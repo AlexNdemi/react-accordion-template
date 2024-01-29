@@ -18,7 +18,7 @@ export const Accordion = ({IMAGES}) => {
                             <button
                                 className="accordion-trigger"
                                 aria-controls={`panel${index + 1}-content`}
-                                aria-expanded="true"
+                                aria-expanded={currentIndex===index}
                             >
                                 <span 
                                     className="accordion-title" 
@@ -32,7 +32,7 @@ export const Accordion = ({IMAGES}) => {
                                 className="accordion-content"
                                 id={`panel${index + 1}-content`}
                                 aria-labelledby={`panel${currentIndex + 1}-heading`}
-                                aria-hidden={currentIndex===index}
+                                aria-hidden={`${currentIndex===index?false:true}`}
                                 role="region"
                             >
                                 <p>

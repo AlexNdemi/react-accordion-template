@@ -33,7 +33,7 @@
     flex-basis: clamp(15rem, 40vh, 20rem);
 } */
 .expanded-accordion{
-    flex-basis: clamp(15rem, 50vh, 25rem);
+    flex-basis: clamp(15rem, 100vh, 30rem);
     flex-grow: 1;
 } 
 .accordion-trigger{
